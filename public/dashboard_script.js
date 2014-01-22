@@ -14,6 +14,10 @@ var definedTeams = {
     'tag': {
         'value':'',
         'postfix':false
+    },
+    'geo':{
+        'flag':'';
+        'region':'';
     }
 }
 ,
@@ -29,7 +33,12 @@ var definedTeams = {
     'tag': {
         'value':'_iT',
         'postfix':true
+    },
+    'geo':{
+        'flag':'US';
+        'region':'NA';
     }
+
 }          
 ,          
 'Classic Mixup' : {
@@ -44,7 +53,12 @@ var definedTeams = {
     'tag': {
         'value':'mix^ ',
         'postfix':false
+    },
+    'geo':{
+        'flag':'US';
+        'region':'NA';
     }
+
 }          
 ,          
 'Lost in Translation' : {
@@ -59,7 +73,12 @@ var definedTeams = {
     'tag': {
         'value':'.liT',
         'postfix':true
+    },
+    'geo':{
+        'flag':'US';
+        'region':'NA';
     }
+
 }          
 ,          
 'WELOVEANIME' : {
@@ -74,7 +93,151 @@ var definedTeams = {
     'tag':{
         'value':'lovesit',
         'postfix':true
+    },
+    'geo':{
+        'flag':'US';
+        'region':'NA';
     }
+
+},
+'Evokate Gaming' : {  
+    'players': {
+            '5':{'Name': 'Bulle', 'Role': 'Medic', 'Country': 'France', 'Notes': ''},
+            '4':{'Name': 'Exon', 'Role': 'Demoman', 'Country': 'France', 'Notes': ''},
+            '3':{'Name': 'Tek', 'Role': 'Pocket', 'Country': 'France', 'Notes': ''},
+            '2':{'Name': 'T-Mac', 'Role': 'Roamer', 'Country': 'France', 'Notes': ''},
+            '1':{'Name': 'Plapla', 'Role': 'Scout', 'Country': 'France', 'Notes': ''},
+            '0':{'Name': 'Flippy', 'Role': 'Scout', 'Country': 'France', 'Notes': ''}
+    },
+    'tag': {
+        'value':' * ROCCAT',
+        'postfix':true
+    },
+    'geo':{
+        'flag':'FR';
+        'region':'EU';
+    }
+
+}          
+,          
+'Mais La Moule !' : {
+    'players': {
+            '5':{'Name': 'mitsy', 'Role': 'Medic', 'Country': 'Germany', 'Notes': ''},
+            '4':{'Name': 'Nadir', 'Role': 'Demoman', 'Country': 'Switzerland', 'Notes': ''},
+            '3':{'Name': 'KnOxXx', 'Role': 'Pocket', 'Country': 'France', 'Notes': ''},
+            '2':{'Name': 'Pierre', 'Role': 'Roamer', 'Country': 'France', 'Notes': 'AKA CaptainHax'},
+            '1':{'Name': 'Droso', 'Role': 'Scout', 'Country': 'Germany', 'Notes': ''},
+            '0':{'Name': 'fl1p', 'Role': 'Scout', 'Country': 'France', 'Notes': ''}
+    },
+    'tag': {
+        'value':'mLm ',
+        'postfix':false
+    },
+    'geo':{
+        'flag':'FR';
+        'region':'EU';
+    }
+
+}          
+,          
+'Dotter' : {
+    'players': {
+            '5':{'Name': '2nuts', 'Role': 'Medic', 'Country': 'Sweden', 'Notes': ''},
+            '4':{'Name': 'ryb', 'Role': 'Demoman', 'Country': 'Sweden', 'Notes': ''},
+            '3':{'Name': 'Knutsson', 'Role': 'Pocket', 'Country': 'Sweden', 'Notes': ''},
+            '2':{'Name': 'Zebbosai', 'Role': 'Roamer', 'Country': 'Canada', 'Notes': ''},
+            '1':{'Name': 'wltrs', 'Role': 'Scout', 'Country': 'Sweden', 'Notes': 'Aggressive Scout'},
+            '0':{'Name': 'BeaVerN', 'Role': 'Scout', 'Country': 'Sweden', 'Notes': 'Pocket Scout'}
+    },
+    'tag':{
+        'value':'.',
+        'postfix':false
+    },
+    'geo':{
+        'flag':'SE';
+        'region':'EU';
+    }
+
+}
+,          
+'The Last Resort' : {
+    'players': {
+            '5':{'Name': 'kiler4fun', 'Role': 'Medic', 'Country': 'Spain', 'Notes': ''},
+            '4':{'Name': 'HYS', 'Role': 'Demoman', 'Country': 'England', 'Notes': ''},
+            '3':{'Name': 'kalho', 'Role': 'Pocket', 'Country': 'Spain', 'Notes': ''},
+            '2':{'Name': 'Rising', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': ''},
+            '1':{'Name': 'Rake', 'Role': 'Scout', 'Country': 'Finland', 'Notes': ''},
+            '0':{'Name': 'Mirelin', 'Role': 'Scout', 'Country': 'Latvia', 'Notes': ''}
+    },
+    'tag':{
+        'value':'TLR ',
+        'postfix':false
+    },
+    'geo':{
+        'flag':'EU';
+        'region':'EU';
+    }
+
+}
+,          
+'Made In Germany' : {
+    'players': {
+            '5':{'Name': 'ThUn', 'Role': 'Medic', 'Country': 'Germany', 'Notes': ''},
+            '4':{'Name': 'kaidus', 'Role': 'Demoman', 'Country': 'England', 'Notes': ''},
+            '3':{'Name': 'ipz-', 'Role': 'Pocket', 'Country': 'Germany', 'Notes': ''},
+            '2':{'Name': 'GeaR', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': ''},
+            '1':{'Name': 'basH', 'Role': 'Scout', 'Country': 'Germany', 'Notes': ''},
+            '0':{'Name': 'smzii', 'Role': 'Scout', 'Country': 'Germany', 'Notes': ''}
+    },
+    'tag':{
+        'value':'mig #',
+        'postfix':false
+    },
+    'geo':{
+        'flag':'DE';
+        'region':'EU';
+    }
+
+}
+,          
+'LEGO' : {
+    'players': {
+            '5':{'Name': 'F2', 'Role': 'Medic', 'Country': 'Denmark', 'Notes': ''},
+            '4':{'Name': 'Dr.Phil', 'Role': 'Demoman', 'Country': 'Denmark', 'Notes': ''},
+            '3':{'Name': 'Natural', 'Role': 'Pocket', 'Country': 'Denmark', 'Notes': ''},
+            '2':{'Name': 'Crizzl', 'Role': 'Roamer', 'Country': 'Denmark', 'Notes': ''},
+            '1':{'Name': 'helberg', 'Role': 'Scout', 'Country': 'Denmark', 'Notes': ''},
+            '0':{'Name': 'zen', 'Role': 'Scout', 'Country': 'Denmark', 'Notes': ''}
+    },
+    'tag':{
+        'value':'LEGO ',
+        'postfix':false
+    },
+    'geo':{
+        'flag':'DK';
+        'region':'EU';
+    }
+
+}
+,          
+'Ayo Gurl Sugadaddy Hoody Pussy Creepers' : {
+    'players': {
+            '5':{'Name': 'kingofsquirrels', 'Role': 'Medic', 'Country': 'England', 'Notes': ''},
+            '4':{'Name': 'stilteR', 'Role': 'Demoman', 'Country': 'England', 'Notes': 'AKA Mike'},
+            '3':{'Name': 'Starkie', 'Role': 'Pocket', 'Country': 'England', 'Notes': ''},
+            '2':{'Name': 'Sideshow', 'Role': 'Roamer', 'Country': 'England', 'Notes': ''},
+            '1':{'Name': 'Hawku', 'Role': 'Scout', 'Country': 'England', 'Notes': ''},
+            '0':{'Name': 'Permzilla', 'Role': 'Scout', 'Country': 'England', 'Notes': ''}
+    },
+    'tag':{
+        'value':'AYO ',
+        'postfix':false
+    },
+    'geo':{
+        'flag':'UK';
+        'region':'EU';
+    }
+
 }
 }; 
 
