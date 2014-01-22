@@ -411,7 +411,7 @@ function sixesForm(team){
 
     var teamSelect = document.createElement("select"); 
     teamSelect.onchange = function(){fillTeam(team, this.value)};
-    for (teamName in definedTeam){
+    for (teamName in definedTeams){
         var teamOption = document.createElement("option");
         teamOption.value = teamName;
         teamOption.innerHTML = teamName;
