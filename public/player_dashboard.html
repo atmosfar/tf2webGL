@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Player profile dashboard</title>
+    <meta charset="utf-8">
+    <link rel=stylesheet href="css/dashboard.css"/>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="dashboard_script.js"></script>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="form">
+            <h2 id="teamhead1">
+				<span id="teamtitle1">Team 1.</span> Tag: <input type="text" id="teamname1"/>
+			</h2>
+            <div id="team1">
+				<div id="columnNames">
+					<div id="nameColumn">PLAYER NAME</div>
+					<div id="countryColumn">COUNTRY</div>
+					<div id="notesColumn">NOTES</div>
+				</div>
+			</div>
+            <h2 id="teamhead2">
+				<span id="teamtitle2">Team 2.</span> Tag: <input type="text" id="teamname2"/>
+			</h2>
+            <div id="team2"></div>
+    </div>
+    <div id="status">
+        <div id="door">
+			<span class="fa-stack fa-lg">
+				<i class="fa fa-cog fa-spin fa-inverse fa-stack-1x closedicon"></i>
+				<i class="fa fa-circle fa-inverse fa-stack-1x openicon"></i>
+			</span>
+		</div>
+        <div id="player"></div>
+        <div id="background"></div>
+    </div>
+</body>
+</html>

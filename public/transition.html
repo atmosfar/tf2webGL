@@ -1,0 +1,39 @@
+<html>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+function closeDoor(){
+    $('#shutter').slideDown(1000, function(){
+        doorOpen = false;
+        setTimeout(openDoor, 500);
+    }); 
+}
+
+
+function openDoor(){
+    $('#shutter img').css('position', 'absolute');
+    $('#shutter').slideUp(1000, function(){
+        doorOpen = true;
+    }); 
+}
+
+$(document).ready(function(){
+    $('#shutter').slideUp(0, function(){});
+    var doorOpen = true;
+    var hostname = 'http://'+document.location.hostname+':3600';
+    var transitionSocket = io.connect(hostname);
+    transitionSocket.on('message', function (data) {
+        if(data == "transition") {
+            try {
+                closeDoor();
+            }
+            catch(e) {
+               console.log(msg);
+            }
+        }
+     });
+
+});
+</script>
+<div id="shutter" style="z-index:1; width: 100%; height: 100%; position:absolute"><img src='http://i.imgur.com/Dyv33rL.jpg' style="width: 100%; height: 100%" /></div>
+</html>

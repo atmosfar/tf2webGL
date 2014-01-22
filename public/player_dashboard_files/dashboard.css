@@ -1,0 +1,62 @@
+.input_hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.selected {
+    background-color: #ccc;
+}
+
+input, button {
+    margin-left: 0.25em;
+}    
+
+.icon {
+    height: 1.2em;
+    width: auto;
+    vertical-align: text-bottom;
+    padding-right: 0.5em;
+}
+
+#nameColumn,
+#countryColumn,
+#notesColumn {
+    display: inline;
+}
+#teamtitle1, #teamtitle2 {
+    padding: 0.25em;
+    color: white;
+    border-radius: 0.25em;
+}
+
+#teamtitle1 {
+    background: #4444DD;
+}
+#teamtitle2 {
+    background: #DD4444;
+}
+
+#status {
+    width: 20em;
+    height: 12em;
+    background: lavender;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+#status #door {
+    display:inline-block;
+    width: 3em;
+    height: 3em;
+    background: red;
+}
+
+#status #door.open {
+    background: lime;
+}
+
+#status #player, #status #background {
+    display: inline-block;
+    width: 100%;
+    height: 2em;
+}

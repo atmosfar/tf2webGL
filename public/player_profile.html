@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>stream profile 3d by atmo</title>
+	<meta charset="utf-8">
+	<link rel=stylesheet href="css/base.css"/>
+</head>
+<body>
+
+<script src="js/three_jsonhack.js"></script>
+<script src="js/SubdivisionModifier.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/Stats.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/THREEx.KeyboardState.js"></script>
+<script src="js/THREEx.FullScreen.js"></script>
+<script src="js/THREEx.WindowResize.js"></script>
+<!--shader stuff -->
+<script src="js/shaders/ConvolutionShader.js"></script>
+<script src="js/shaders/CopyShader.js"></script>
+<script src="js/shaders/FXAAShader.js"></script>
+<script src="js/postprocessing/EffectComposer.js"></script>
+<script src="js/postprocessing/RenderPass.js"></script>
+<script src="js/postprocessing/MaskPass.js"></script>
+<script src="js/postprocessing/ShaderPass.js"></script>
+<script src="js/postprocessing/BloomPass.js"></script>
+
+<!-- load fonts -->
+<script src="fonts/aller_bold.typeface.js"></script>
+<script src="fonts/alternategothicef_nothree.typeface.js"></script>
+
+<!-- jQuery code to display an information button and box when clicked. -->
+<script src="js/jquery-1.9.1.js"></script>
+<script src="/socket.io/socket.io.js"></script> 
+<script src="3d_script.js"></script>
+<script src="process_spawn_loader.js"></script>
+
+<!-- ------------------------------------------------------------ -->
+<div id="shutter" style="z-index:1; width: 100%; height: 100%; position:absolute"><img src='images/noentry_tftv.jpg' style="width: 100%; height: 100%" /></div>
+<audio id="sound" src=""></audio>
+
+<div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
+<script>
+</script>
+
+</body>
+</html>

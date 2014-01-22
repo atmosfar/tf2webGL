@@ -1,0 +1,33 @@
+<html><span class="heading">Scene name:</span><br /><input type="field" id="scenename" style="width:400px" /><br /><br />
+<button type="button" id="sendbutton">Show scene</button><br />
+<br /></html>
+ <script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+var sendButton = document.getElementById('sendbutton');
+var sceneName = document.getElementById('scenename');
+sendButton.onclick = function(){ sendMessage(sceneName.value); }
+var obsRemoteURL = 'ws://localhost:4444';
+var transitionURL = 'ws://'+document.location.hostname+':3600';;
+var sceneSocket;
+
+var hostname = 'http://'+document.location.hostname+':3600';
+var transitionSocket = io.connect(hostname);
+transitionSocket.emit('send', 'transition');
+
+sceneSocket = (typeof MozWebSocket != "undefined") ? 
+ new MozWebSocket(obsRemoteURL, "obsapi") : 
+ new WebSocket(obsRemoteURL, "obsapi");
+
+function sendMessage(msg, callback){
+    var myJSONRequest = {};
+    myJSONRequest["request-type"] = "SetCurrentScene";
+    myJSONRequest["scene-name"] = msg;
+    myJSONRequest["message-id"] = 1;
+    var serializedMessage = JSON.stringify(myJSONRequest);
+    transitionSocket.emit('send', 'transition');
+    setTimeout(function(){
+        sceneSocket.send(serializedMessage);
+    }, 1300);
+}
+</script>
+</html>
