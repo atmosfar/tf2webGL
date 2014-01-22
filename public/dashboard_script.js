@@ -16,8 +16,8 @@ var definedTeams = {
         'postfix':false
     },
     'geo':{
-        'flag':'';
-        'region':'';
+        'flag':'',
+        'region':'',
     }
 }
 ,
