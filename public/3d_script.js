@@ -67,7 +67,7 @@ $(document).ready(function (){
 
     var matIndex = 0;
     var matCount = materialsToCache.length;
-//    loadUp(matIndex);
+//    loadUp(matIndex); //commented because caching is not working right now
 
     function loadUp(_matIndex){
         textureCache[''+materialsToCache[_matIndex]+''] = THREE.ImageUtils.loadTexture('models/'+materialsToCache[_matIndex], {}, function() {
@@ -86,8 +86,13 @@ $(document).ready(function (){
         }
     }
     
-    dashSocket.emit('send', {message:{type:'door', doorstatus:doorOpen}}); //init status pane in dashboard
-    dashSocket.emit('send', {message:{type:'background', backgroundname: currentBackground}});
+	function updateDashboard() {
+		dashSocket.emit('send', {message:{type:'door', doorstatus:doorOpen}});
+		dashSocket.emit('send', {message:{type:'background', backgroundname: currentBackground}});
+		dashSocket.emit('send', {message:{type:'player', playername: currentPlayer.Name}});
+	}
+	
+	setInterval(updateDashboard, 1000);
     
     dashSocket.on('message', function (data) {
         if(typeof data.message != "undefined") {
@@ -522,4 +527,3 @@ $(document).ready(function (){
     }
 
 });
-
