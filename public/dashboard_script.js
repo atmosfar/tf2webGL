@@ -35,8 +35,8 @@ var definedTeams = {
         'postfix':true
     },
     'geo':{
-        'flag':'US';
-        'region':'NA';
+        'flag':'US',
+        'region':'NA',
     }
 
 }          
@@ -55,8 +55,8 @@ var definedTeams = {
         'postfix':false
     },
     'geo':{
-        'flag':'US';
-        'region':'NA';
+        'flag':'US',
+        'region':'NA',
     }
 
 }          
@@ -75,8 +75,8 @@ var definedTeams = {
         'postfix':true
     },
     'geo':{
-        'flag':'US';
-        'region':'NA';
+        'flag':'US',
+        'region':'NA',
     }
 
 }          
@@ -95,8 +95,8 @@ var definedTeams = {
         'postfix':true
     },
     'geo':{
-        'flag':'US';
-        'region':'NA';
+        'flag':'US',
+        'region':'NA',
     }
 
 },
@@ -114,8 +114,8 @@ var definedTeams = {
         'postfix':true
     },
     'geo':{
-        'flag':'FR';
-        'region':'EU';
+        'flag':'FR',
+        'region':'EU',
     }
 
 }          
@@ -134,8 +134,8 @@ var definedTeams = {
         'postfix':false
     },
     'geo':{
-        'flag':'FR';
-        'region':'EU';
+        'flag':'FR',
+        'region':'EU',
     }
 
 }          
@@ -154,8 +154,8 @@ var definedTeams = {
         'postfix':false
     },
     'geo':{
-        'flag':'SE';
-        'region':'EU';
+        'flag':'SE',
+        'region':'EU',
     }
 
 }
@@ -174,8 +174,8 @@ var definedTeams = {
         'postfix':false
     },
     'geo':{
-        'flag':'EU';
-        'region':'EU';
+        'flag':'EU',
+        'region':'EU',
     }
 
 }
@@ -194,8 +194,8 @@ var definedTeams = {
         'postfix':false
     },
     'geo':{
-        'flag':'DE';
-        'region':'EU';
+        'flag':'DE',
+        'region':'EU',
     }
 
 }
@@ -214,8 +214,8 @@ var definedTeams = {
         'postfix':false
     },
     'geo':{
-        'flag':'DK';
-        'region':'EU';
+        'flag':'DK',
+        'region':'EU',
     }
 
 }
@@ -234,8 +234,8 @@ var definedTeams = {
         'postfix':false
     },
     'geo':{
-        'flag':'UK';
-        'region':'EU';
+        'flag':'UK',
+        'region':'EU',
     }
 
 }
