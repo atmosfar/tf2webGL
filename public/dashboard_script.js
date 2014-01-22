@@ -125,10 +125,10 @@ function parseMessage(_msg){
                 $('#status #player').text(_msg.playername);
                 $('.name').each(function(i){
                     if($('.name:eq('+i+')').val() == _msg.playername){
-                        $('.name:eq('+i+')').addClass('displayed');
+                        $('.player:eq('+i+')').addClass('displayed');
                     }
                     else {
-                        $('.name:eq('+i+')').removeClass('displayed');
+                        $('.player:eq('+i+')').removeClass('displayed');
                     }
                 });
                 break;

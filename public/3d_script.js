@@ -95,15 +95,9 @@ $(document).ready(function (){
 	setInterval(updateDashboard, 1000);
     
     dashSocket.on('message', function (data) {
-        if(typeof data.message != "undefined") {
-            var msg = data.message;
-            try {
-                var playerInfo = JSON.parse(msg);
+        if( data.content == "playerInfo"){
+                var playerInfo = JSON.parse(data.message);
                 showPlayer(playerInfo);
-            }
-            catch(e) {
-               console.log(msg);
-            }
         }
      });
     
