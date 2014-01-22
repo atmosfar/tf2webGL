@@ -1,7 +1,7 @@
 var hostname = 'http://'+document.location.hostname+':3600';
 var socket = io.connect(hostname);
 
-var LANteams = {
+var definedTeams = {
 '(blank)' : { 
     'players': {
         '0':{'Name': '', 'Role': '', 'Country': '', 'Notes': ''},
@@ -80,7 +80,7 @@ var LANteams = {
 
 function fillTeam(teamNo, teamName){
     var teamDiv = '#team'+teamNo;
-    var teamData = (LANteams[teamName]);
+    var teamData = (definedTeams[teamName]);
     var playersData = teamData.players;
     var tagData = teamData.tag;
     for(p in playersData){
@@ -248,7 +248,7 @@ function sixesForm(team){
 
     var teamSelect = document.createElement("select"); 
     teamSelect.onchange = function(){fillTeam(team, this.value)};
-    for (teamName in LANteams){
+    for (teamName in definedTeam){
         var teamOption = document.createElement("option");
         teamOption.value = teamName;
         teamOption.innerHTML = teamName;
