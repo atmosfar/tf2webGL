@@ -105,10 +105,10 @@ var definedTeams = {
     'players': {
             '5':{'Name': 'Bulle', 'Role': 'Medic', 'Country': 'France', 'Notes': ''},
             '4':{'Name': 'Exon', 'Role': 'Demoman', 'Country': 'France', 'Notes': ''},
-            '3':{'Name': 'Tek', 'Role': 'Pocket', 'Country': 'France', 'Notes': ''},
+            '3':{'Name': 'Tek', 'Role': 'Pocket', 'Country': 'France', 'Notes': 'twitch.tv/tek36'},
             '2':{'Name': 'T-Mac', 'Role': 'Roamer', 'Country': 'France', 'Notes': ''},
             '1':{'Name': 'Plapla', 'Role': 'Scout', 'Country': 'France', 'Notes': ''},
-            '0':{'Name': 'Flippy', 'Role': 'Scout', 'Country': 'France', 'Notes': ''}
+            '0':{'Name': 'Flippy', 'Role': 'Scout', 'Country': 'France', 'Notes': 'Offclasser of Season 16'}
     },
     'tag': {
         'value':' * ROCCAT',
@@ -123,12 +123,12 @@ var definedTeams = {
 ,          
 'Mais La Moule !' : {
     'players': {
-            '5':{'Name': 'mitsy', 'Role': 'Medic', 'Country': 'Belgium', 'Notes': ''},
+            '5':{'Name': 'Mitsy', 'Role': 'Medic', 'Country': 'Belgium', 'Notes': ''},
             '4':{'Name': 'Nadir', 'Role': 'Demoman', 'Country': 'Switzerland', 'Notes': ''},
-            '3':{'Name': 'KnOxXx', 'Role': 'Pocket', 'Country': 'France', 'Notes': ''},
+            '3':{'Name': 'KnOxXx', 'Role': 'Pocket', 'Country': 'France', 'Notes': 'i49 Winner'},
             '2':{'Name': 'Pierre', 'Role': 'Roamer', 'Country': 'France', 'Notes': 'AKA CaptainHax'},
-            '1':{'Name': 'Droso', 'Role': 'Scout', 'Country': 'Belgium', 'Notes': ''},
-            '0':{'Name': 'fl1p', 'Role': 'Scout', 'Country': 'France', 'Notes': ''}
+            '1':{'Name': 'Droso', 'Role': 'Scout', 'Country': 'Belgium', 'Notes': 'twitch.tv/drosotv'},
+            '0':{'Name': 'fl1p', 'Role': 'Scout', 'Country': 'France', 'Notes': 'Prem Debut of Season 16'}
     },
     'tag': {
         'value':'mLm ',
@@ -143,7 +143,7 @@ var definedTeams = {
 ,          
 'Dotter' : {
     'players': {
-            '5':{'Name': '2nuts', 'Role': 'Medic', 'Country': 'Sweden', 'Notes': ''},
+            '5':{'Name': '2nuts', 'Role': 'Medic', 'Country': 'Sweden', 'Notes': 'Medic of Season 16'},
             '4':{'Name': 'ryb', 'Role': 'Demoman', 'Country': 'Sweden', 'Notes': ''},
             '3':{'Name': 'Knutsson', 'Role': 'Pocket', 'Country': 'Sweden', 'Notes': ''},
             '2':{'Name': 'Zebbosai', 'Role': 'Roamer', 'Country': 'Canada', 'Notes': ''},
@@ -163,12 +163,12 @@ var definedTeams = {
 ,          
 'The Last Resort' : {
     'players': {
-            '5':{'Name': 'kiler4fun', 'Role': 'Medic', 'Country': 'Portugal', 'Notes': ''},
-            '4':{'Name': 'HYS', 'Role': 'Demoman', 'Country': 'England', 'Notes': ''},
-            '3':{'Name': 'kalho', 'Role': 'Pocket', 'Country': 'Portugal', 'Notes': ''},
-            '2':{'Name': 'Rising', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': ''},
-            '1':{'Name': 'Rake', 'Role': 'Scout', 'Country': 'Finland', 'Notes': ''},
-            '0':{'Name': 'Mirelin', 'Role': 'Scout', 'Country': 'Latvia', 'Notes': ''}
+            '0':{'Name': 'kiler4fun', 'Role': 'Medic', 'Country': 'Portugal', 'Notes': 'twitch.tv/kiler4fun'},
+            '1':{'Name': 'HYS', 'Role': 'Demoman', 'Country': 'England', 'Notes': ''},
+            '2':{'Name': 'kalho', 'Role': 'Pocket', 'Country': 'Portugal', 'Notes': ''},
+            '3':{'Name': 'Rising', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': ''},
+            '4':{'Name': 'Rake', 'Role': 'Scout', 'Country': 'Finland', 'Notes': 'twitch.tv/raketf2'},
+            '5':{'Name': 'Mirelin', 'Role': 'Scout', 'Country': 'Latvia', 'Notes': ''}
     },
     'tag':{
         'value':'TLR ',
@@ -184,14 +184,14 @@ var definedTeams = {
 'Made In Germany' : {
     'players': {
             '5':{'Name': 'ThUn', 'Role': 'Medic', 'Country': 'Germany', 'Notes': ''},
-            '4':{'Name': 'kaidus', 'Role': 'Demoman', 'Country': 'England', 'Notes': ''},
-            '3':{'Name': 'ipz-', 'Role': 'Pocket', 'Country': 'Germany', 'Notes': ''},
-            '2':{'Name': 'GeaR', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': ''},
-            '1':{'Name': 'basH', 'Role': 'Scout', 'Country': 'Germany', 'Notes': ''},
+            '4':{'Name': 'kaidus', 'Role': 'Demoman', 'Country': 'England', 'Notes': 'Demoman of Season 16'},
+            '3':{'Name': 'ipz-', 'Role': 'Pocket', 'Country': 'Germany', 'Notes': 'Maincaller'},
+            '2':{'Name': 'GeaR', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': 'i49 Winner'},
+            '1':{'Name': 'basH', 'Role': 'Scout', 'Country': 'Germany', 'Notes': 'i49 Winner'},
             '0':{'Name': 'smzii', 'Role': 'Scout', 'Country': 'Germany', 'Notes': ''}
     },
     'tag':{
-        'value':'mig #',
+        'value':'mig*',
         'postfix':false
     },
     'geo':{
@@ -203,12 +203,12 @@ var definedTeams = {
 ,          
 'LEGO' : {
     'players': {
-            '5':{'Name': 'F2', 'Role': 'Medic', 'Country': 'Denmark', 'Notes': ''},
+            '5':{'Name': 'F2', 'Role': 'Medic', 'Country': 'Denmark', 'Notes': 'Former Epsilon Medic'},
             '4':{'Name': 'Dr.Phil', 'Role': 'Demoman', 'Country': 'Denmark', 'Notes': ''},
             '3':{'Name': 'Natural', 'Role': 'Pocket', 'Country': 'Denmark', 'Notes': ''},
             '2':{'Name': 'Crizzl', 'Role': 'Roamer', 'Country': 'Denmark', 'Notes': ''},
             '1':{'Name': 'helberg', 'Role': 'Scout', 'Country': 'Denmark', 'Notes': ''},
-            '0':{'Name': 'zen', 'Role': 'Scout', 'Country': 'Denmark', 'Notes': ''}
+            '0':{'Name': 'zen', 'Role': 'Scout', 'Country': 'Denmark', 'Notes': 'Upcoming Talent of Season 16'}
     },
     'tag':{
         'value':'LEGO ',
@@ -225,10 +225,10 @@ var definedTeams = {
     'players': {
             '5':{'Name': 'kingofsquirrels', 'Role': 'Medic', 'Country': 'England', 'Notes': ''},
             '4':{'Name': 'stilteR', 'Role': 'Demoman', 'Country': 'Wales', 'Notes': 'AKA Mike'},
-            '3':{'Name': 'Starkie', 'Role': 'Pocket', 'Country': 'England', 'Notes': ''},
-            '2':{'Name': 'Sideshow', 'Role': 'Roamer', 'Country': 'England', 'Notes': ''},
+            '3':{'Name': 'Starkie', 'Role': 'Pocket', 'Country': 'England', 'Notes': 'twitch.tv/Stark62'},
+            '2':{'Name': 'Sideshow', 'Role': 'Roamer', 'Country': 'England', 'Notes': 'ETF2L Admin'},
             '1':{'Name': 'Hawku', 'Role': 'Scout', 'Country': 'England', 'Notes': ''},
-            '0':{'Name': 'Permzilla', 'Role': 'Scout', 'Country': 'England', 'Notes': ''}
+            '0':{'Name': 'Permzilla', 'Role': 'Scout', 'Country': 'England', 'Notes': 'ETF2L Admin'}
     },
     'tag':{
         'value':'AYO ',
