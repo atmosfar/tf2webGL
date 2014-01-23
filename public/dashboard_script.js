@@ -1,5 +1,6 @@
 var hostname = 'http://'+document.location.hostname+':3600';
 var socket = io.connect(hostname);
+var region = "global";
 
 var definedTeams = {
 '(blank)' : { 
@@ -122,11 +123,11 @@ var definedTeams = {
 ,          
 'Mais La Moule !' : {
     'players': {
-            '5':{'Name': 'mitsy', 'Role': 'Medic', 'Country': 'Germany', 'Notes': ''},
+            '5':{'Name': 'mitsy', 'Role': 'Medic', 'Country': 'Belgium', 'Notes': ''},
             '4':{'Name': 'Nadir', 'Role': 'Demoman', 'Country': 'Switzerland', 'Notes': ''},
             '3':{'Name': 'KnOxXx', 'Role': 'Pocket', 'Country': 'France', 'Notes': ''},
             '2':{'Name': 'Pierre', 'Role': 'Roamer', 'Country': 'France', 'Notes': 'AKA CaptainHax'},
-            '1':{'Name': 'Droso', 'Role': 'Scout', 'Country': 'Germany', 'Notes': ''},
+            '1':{'Name': 'Droso', 'Role': 'Scout', 'Country': 'Belgium', 'Notes': ''},
             '0':{'Name': 'fl1p', 'Role': 'Scout', 'Country': 'France', 'Notes': ''}
     },
     'tag': {
@@ -162,9 +163,9 @@ var definedTeams = {
 ,          
 'The Last Resort' : {
     'players': {
-            '5':{'Name': 'kiler4fun', 'Role': 'Medic', 'Country': 'Spain', 'Notes': ''},
+            '5':{'Name': 'kiler4fun', 'Role': 'Medic', 'Country': 'Portugal', 'Notes': ''},
             '4':{'Name': 'HYS', 'Role': 'Demoman', 'Country': 'England', 'Notes': ''},
-            '3':{'Name': 'kalho', 'Role': 'Pocket', 'Country': 'Spain', 'Notes': ''},
+            '3':{'Name': 'kalho', 'Role': 'Pocket', 'Country': 'Portugal', 'Notes': ''},
             '2':{'Name': 'Rising', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': ''},
             '1':{'Name': 'Rake', 'Role': 'Scout', 'Country': 'Finland', 'Notes': ''},
             '0':{'Name': 'Mirelin', 'Role': 'Scout', 'Country': 'Latvia', 'Notes': ''}
@@ -223,7 +224,7 @@ var definedTeams = {
 'Ayo Gurl Sugadaddy Hoody Pussy Creepers' : {
     'players': {
             '5':{'Name': 'kingofsquirrels', 'Role': 'Medic', 'Country': 'England', 'Notes': ''},
-            '4':{'Name': 'stilteR', 'Role': 'Demoman', 'Country': 'England', 'Notes': 'AKA Mike'},
+            '4':{'Name': 'stilteR', 'Role': 'Demoman', 'Country': 'Wales', 'Notes': 'AKA Mike'},
             '3':{'Name': 'Starkie', 'Role': 'Pocket', 'Country': 'England', 'Notes': ''},
             '2':{'Name': 'Sideshow', 'Role': 'Roamer', 'Country': 'England', 'Notes': ''},
             '1':{'Name': 'Hawku', 'Role': 'Scout', 'Country': 'England', 'Notes': ''},
@@ -258,6 +259,48 @@ function fillTeam(teamNo, teamName){
     }
     else {
         $('#postfixcheck'+teamNo).prop("checked", false).change();
+    }
+}
+
+function insertRegionSelector(){
+    var regions = ['EU', 'NA', 'AU', 'global'];
+    var regionsDiv = document.createElement("div");
+    $(regionsDiv).attr('id','regionSelector');
+    regions.forEach(function(r){
+        var flagPath = 'images/Flag_'+r+'.png';
+        var flagImg = document.createElement("img");
+        flagImg.src = flagPath;
+        $(flagImg).addClass('flag');
+        if(r == region) {
+            $(flagImg).addClass('selected');
+        }
+        $(flagImg).click(function(e){selectRegion(e,r)});
+        $(flagImg).appendTo(regionsDiv);
+    });
+    $('#form').prepend(regionsDiv);
+}
+
+function selectRegion(e,r){
+    region = r;
+    $('#teamSelect1').find('option').remove();
+    $('#teamSelect2').find('option').remove();
+    $('.flag').removeClass('selected');
+    $(e.target).addClass('selected');
+    var ts = document.getElementById('teamSelect1');
+    fillTeamSelector(ts);
+    ts = document.getElementById('teamSelect2');
+    fillTeamSelector(ts);
+}
+
+function fillTeamSelector(teamSelect){
+    for (teamName in definedTeams){
+        var teamRegion = definedTeams[teamName].geo.region;
+        if(region == teamRegion || region == "global" || teamRegion == ""){
+            var teamOption = document.createElement("option");
+            teamOption.value = teamName;
+            teamOption.innerHTML = teamName;
+            teamSelect.appendChild(teamOption);
+        }
     }
 }
 
@@ -410,18 +453,14 @@ function sixesForm(team){
     });            
 
     var teamSelect = document.createElement("select"); 
+    $(teamSelect).attr('id','teamSelect'+team);
     teamSelect.onchange = function(){fillTeam(team, this.value)};
-    for (teamName in definedTeams){
-        var teamOption = document.createElement("option");
-        teamOption.value = teamName;
-        teamOption.innerHTML = teamName;
-        teamSelect.appendChild(teamOption);
-    }
+    fillTeamSelector(teamSelect);
     $(teamSelect).appendTo(teamHeadDiv);
 }
 
 $(document).ready(function(){
-
+    insertRegionSelector();
     sixesForm('1');
     sixesForm('2');
     

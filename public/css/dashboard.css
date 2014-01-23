@@ -78,3 +78,15 @@ input, button {
 #team2 .player.displayed {
 	background: Beige;
 }
+
+.flag {
+    padding: 0.2em;
+}
+
+.flag.selected {
+    background: LightGray;
+}
+
+#regionSelector {
+    float: right;
+}
