@@ -244,7 +244,7 @@ var definedTeams = {
 
 function fillTeam(teamNo, teamName){
     var teamDiv = '#team'+teamNo;
-    var teamData = (definedTeams[teamName]);
+    var teamData = definedTeams[teamName];
     var playersData = teamData.players;
     var tagData = teamData.tag;
     for(p in playersData){
@@ -282,14 +282,21 @@ function insertRegionSelector(){
 
 function selectRegion(e,r){
     region = r;
-    $('#teamSelect1').find('option').remove();
-    $('#teamSelect2').find('option').remove();
+    for(var i=1; i<=2; i++){
+        var prevTeam = $('#teamSelect'+i).val();
+        var prevRegion = definedTeams[prevTeam].geo.region;
+        $('#teamSelect'+i).find('option').remove();
+        var ts = document.getElementById('teamSelect'+i);
+        fillTeamSelector(ts);
+        if(r != 'global' && prevRegion != r){ //handle switching to and from global
+            fillTeam(i,'(blank)');
+        }
+        else {
+           ts.value = prevTeam; 
+        }
+    }
     $('.flag').removeClass('selected');
     $(e.target).addClass('selected');
-    var ts = document.getElementById('teamSelect1');
-    fillTeamSelector(ts);
-    ts = document.getElementById('teamSelect2');
-    fillTeamSelector(ts);
 }
 
 function fillTeamSelector(teamSelect){
