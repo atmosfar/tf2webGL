@@ -125,10 +125,10 @@ var definedTeams = {
     'players': {
             '5':{'Name': 'Mitsy', 'Role': 'Medic', 'Country': 'Belgium', 'Notes': ''},
             '4':{'Name': 'Nadir', 'Role': 'Demoman', 'Country': 'Switzerland', 'Notes': ''},
-            '3':{'Name': 'KnOxXx', 'Role': 'Pocket', 'Country': 'France', 'Notes': 'i49 Winner'},
+            '3':{'Name': 'KnOxXx', 'Role': 'Pocket', 'Country': 'France', 'Notes': 'i49 Winner\\ntwitch.tv/knoxxx69'},
             '2':{'Name': 'Pierre', 'Role': 'Roamer', 'Country': 'France', 'Notes': 'AKA CaptainHax'},
             '1':{'Name': 'Droso', 'Role': 'Scout', 'Country': 'Belgium', 'Notes': 'twitch.tv/drosotv'},
-            '0':{'Name': 'fl1p', 'Role': 'Scout', 'Country': 'France', 'Notes': 'Prem Debut of Season 16'}
+            '0':{'Name': 'fl1p', 'Role': 'Scout', 'Country': 'France', 'Notes': 'Prem Debut of Season 16\\ntwitch.tv/fl1p_'}
     },
     'tag': {
         'value':'mLm ',
@@ -143,7 +143,7 @@ var definedTeams = {
 ,          
 'Dotter' : {
     'players': {
-            '5':{'Name': '2nuts', 'Role': 'Medic', 'Country': 'Sweden', 'Notes': 'Medic of Season 16'},
+            '5':{'Name': '2nuts', 'Role': 'Medic', 'Country': 'Sweden', 'Notes': 'Medic of Season 16\\ntwitch.tv/twonuts'},
             '4':{'Name': 'ryb', 'Role': 'Demoman', 'Country': 'Sweden', 'Notes': ''},
             '3':{'Name': 'Knutsson', 'Role': 'Pocket', 'Country': 'Sweden', 'Notes': ''},
             '2':{'Name': 'Zebbosai', 'Role': 'Roamer', 'Country': 'Canada', 'Notes': ''},
@@ -184,9 +184,9 @@ var definedTeams = {
 'Made In Germany' : {
     'players': {
             '5':{'Name': 'ThUn', 'Role': 'Medic', 'Country': 'Germany', 'Notes': ''},
-            '4':{'Name': 'kaidus', 'Role': 'Demoman', 'Country': 'England', 'Notes': 'Demoman of Season 16'},
+            '4':{'Name': 'kaidus', 'Role': 'Demoman', 'Country': 'England', 'Notes': 'Demoman of Season 16\\ntwitch.tv/kaidus'},
             '3':{'Name': 'ipz-', 'Role': 'Pocket', 'Country': 'Germany', 'Notes': 'Maincaller'},
-            '2':{'Name': 'GeaR', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': 'i49 Winner'},
+            '2':{'Name': 'GeaR', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': 'i49 Winner\\nRoamer of Season 16'},
             '1':{'Name': 'basH', 'Role': 'Scout', 'Country': 'Germany', 'Notes': 'i49 Winner'},
             '0':{'Name': 'smzii', 'Role': 'Scout', 'Country': 'Germany', 'Notes': ''}
     },
@@ -224,8 +224,8 @@ var definedTeams = {
 'Ayo Gurl Sugadaddy Hoody Pussy Creepers' : {
     'players': {
             '5':{'Name': 'kingofsquirrels', 'Role': 'Medic', 'Country': 'England', 'Notes': ''},
-            '4':{'Name': 'stilteR', 'Role': 'Demoman', 'Country': 'Wales', 'Notes': 'AKA Mike'},
-            '3':{'Name': 'Starkie', 'Role': 'Pocket', 'Country': 'England', 'Notes': 'twitch.tv/Stark62'},
+            '4':{'Name': 'Mike', 'Role': 'Demoman', 'Country': 'Wales', 'Notes': 'Player of Season 16\\nPocket of Season 16\\ntwitch.tv/mgemike'},
+            '3':{'Name': 'Starkie', 'Role': 'Pocket', 'Country': 'England', 'Notes': 'Maincaller\\ntwitch.tv/Stark62'},
             '2':{'Name': 'Sideshow', 'Role': 'Roamer', 'Country': 'England', 'Notes': 'ETF2L Admin'},
             '1':{'Name': 'Hawku', 'Role': 'Scout', 'Country': 'England', 'Notes': ''},
             '0':{'Name': 'Permzilla', 'Role': 'Scout', 'Country': 'England', 'Notes': 'ETF2L Admin'}

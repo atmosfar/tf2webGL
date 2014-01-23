@@ -223,14 +223,35 @@ $(document).ready(function (){
         var profileTextHeightOffset = 0;
         for (var i in profileInfo){
             if(profileInfo[i] != ''){
-                profileTextGeom[i] = new THREE.TextGeometry( i+" : "+profileInfo[i], profileTextOptions);
-                profileTextMesh[i] = new THREE.Mesh(profileTextGeom[i], textMaterial);
-                profileTextGeom[i].computeBoundingBox();
-                profileTextMesh[i].position.set(profileTextPos.x, profileTextPos.y-profileTextHeightOffset, profileTextPos.z);
-                profileTextMesh[i].rotation.y = textMesh.rotation.y;
-                profileTextMesh[i].castShadow = true;
-                profileTextMesh[i].name = i;
-                profileTextHeightOffset += profileTextGeom[i].boundingBox.max.y * 1.3;
+                var lines = profileInfo[i].split('\\n');
+                lines.forEach(function(l,index){
+                    var line = l;
+                    if(index == 0) {
+                        line = i + " : "+line; //add Name/Note/County prefix if first line of that section
+                        profileTextGeom[i] = new THREE.TextGeometry(line, profileTextOptions);
+                        profileTextMesh[i] = new THREE.Mesh(profileTextGeom[i], textMaterial);
+                        profileTextGeom[i].computeBoundingBox();
+                        profileTextMesh[i].position.set(profileTextPos.x, profileTextPos.y-profileTextHeightOffset, profileTextPos.z);
+                        profileTextMesh[i].rotation.y = textMesh.rotation.y;
+                        profileTextMesh[i].castShadow = true;
+                        profileTextMesh[i].name = i;
+                        profileTextHeightOffset += profileTextGeom[i].boundingBox.max.y * 1.3;
+                    }
+                    else {
+                        var lineGeom;
+                        var lineMesh;
+                        var lineHeight;
+                        line = " "+line;
+                        lineGeom = new THREE.TextGeometry(line, profileTextOptions);
+                        lineMesh = new THREE.Mesh(lineGeom, textMaterial);
+                        lineGeom.computeBoundingBox();
+                        lineHeight = lineGeom.boundingBox.max.y * 1.3;
+                        lineMesh.position.set(0, -lineHeight*index, 0); //positions relative to parent mesh
+                        lineMesh.castShadow = true;
+                        profileTextMesh[i].add(lineMesh);
+                        profileTextHeightOffset += lineHeight;
+                    }
+                });
                 scene.add(profileTextMesh[i]);
             }
         }
