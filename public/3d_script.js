@@ -169,7 +169,7 @@ $(document).ready(function (){
     }
 
     function closeDoor(_playerInfo){
-        $('#shutter').slideDown(1000, function(){
+        $('#shutter').animate({marginTop:0}, 1000,function(){
             removePlayer(_playerInfo);
             doorOpen = false;
             dashSocket.emit('send', {message:{type:'door', doorstatus:doorOpen}});
@@ -181,11 +181,11 @@ $(document).ready(function (){
         cameraRotate = true;
         $('#shutter img').css('height', window.innerHeight);
         $('#shutter img').css('position', 'absolute');
-        var slideup = function(){ $('#shutter').slideUp(1000, function(){
+        var h = $('#shutter').height(); 
+        $('#shutter').delay(2000).animate({marginTop: -h}, 1000,function(){
             doorOpen = true;
             dashSocket.emit('send', {message:{type:'door', doorstatus:doorOpen}});
-        });}; 
-        setTimeout(slideup, 2000);
+        }); 
     }
 
     function insertText(_playerInfo, callback){
