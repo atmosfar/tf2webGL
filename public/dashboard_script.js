@@ -240,6 +240,26 @@ var definedTeams = {
     }
 
 }
+,          
+'Fenneks eSports' : {
+    'players': { 
+            '5':{'Name': 'skeej', 'Role': 'Medic', 'Country': 'Netherlands', 'Notes': ''},
+            '4':{'Name': 'sickless', 'Role': 'Demoman', 'Country': 'Russia', 'Notes': ''},
+            '3':{'Name': 'KLar', 'Role': 'Pocket', 'Country': 'Germany', 'Notes': ''},
+            '2':{'Name': 'KillAri', 'Role': 'Roamer', 'Country': 'Belgium', 'Notes': 'ETF2L AC Admin'},
+            '1':{'Name': 'gf18_idiot', 'Role': 'Scout', 'Country': 'England', 'Notes': 'ETF2L AC Admin'},
+            '0':{'Name': 'delzic', 'Role': 'Scout', 'Country': 'Finland', 'Notes': ''}
+    },
+    'tag':{
+        'value':'fnx.simrai ',
+        'postfix':false
+    },
+    'geo':{
+        'flag':'EU',
+        'region':'EU',
+    }
+
+}
 }; 
 
 function fillTeam(teamNo, teamName){
