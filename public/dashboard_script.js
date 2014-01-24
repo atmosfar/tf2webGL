@@ -147,8 +147,8 @@ var definedTeams = {
             '4':{'Name': 'ryb', 'Role': 'Demoman', 'Country': 'Sweden', 'Notes': ''},
             '3':{'Name': 'Knutsson', 'Role': 'Pocket', 'Country': 'Sweden', 'Notes': ''},
             '2':{'Name': 'Zebbosai', 'Role': 'Roamer', 'Country': 'Canada', 'Notes': ''},
-            '1':{'Name': 'wltrs', 'Role': 'Scout', 'Country': 'Sweden', 'Notes': 'Aggressive Scout'},
-            '0':{'Name': 'BeaVerN', 'Role': 'Scout', 'Country': 'Sweden', 'Notes': 'Pocket Scout'}
+            '1':{'Name': 'wltrs', 'Role': 'Scout', 'Country': 'Sweden', 'Notes': ''},
+            '0':{'Name': 'BeaVerN', 'Role': 'Scout', 'Country': 'Sweden', 'Notes': ''}
     },
     'tag':{
         'value':'.',
@@ -208,7 +208,7 @@ var definedTeams = {
             '3':{'Name': 'Natural', 'Role': 'Pocket', 'Country': 'Denmark', 'Notes': ''},
             '2':{'Name': 'Crizzl', 'Role': 'Roamer', 'Country': 'Denmark', 'Notes': ''},
             '1':{'Name': 'helberg', 'Role': 'Scout', 'Country': 'Denmark', 'Notes': ''},
-            '0':{'Name': 'zen', 'Role': 'Scout', 'Country': 'Denmark', 'Notes': 'Upcoming Talent of Season 16'}
+            '0':{'Name': 'zen', 'Role': 'Scout', 'Country': 'Denmark', 'Notes': 'Upcoming Talent\\nof Season 16'}
     },
     'tag':{
         'value':'LEGO ',
