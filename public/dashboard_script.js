@@ -123,7 +123,7 @@ var definedTeams = {
 ,          
 'Mais La Moule !' : {
     'players': {
-            '5':{'Name': 'Mitsy', 'Role': 'Medic', 'Country': 'Belgium', 'Notes': ''},
+            '5':{'Name': 'Mickey', 'Role': 'Medic', 'Country': 'Belgium', 'Notes': 'AKA Mitsy'},
             '4':{'Name': 'Nadir', 'Role': 'Demoman', 'Country': 'Switzerland', 'Notes': ''},
             '3':{'Name': 'KnOxXx', 'Role': 'Pocket', 'Country': 'France', 'Notes': 'i49 Winner\\ntwitch.tv/knoxxx69'},
             '2':{'Name': 'Pierre', 'Role': 'Roamer', 'Country': 'France', 'Notes': 'AKA CaptainHax'},
