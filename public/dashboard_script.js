@@ -146,7 +146,7 @@ var definedTeams = {
             '5':{'Name': '2nuts', 'Role': 'Medic', 'Country': 'Sweden', 'Notes': 'Medic of Season 16\\ntwitch.tv/twonuts'},
             '4':{'Name': 'ryb', 'Role': 'Demoman', 'Country': 'Sweden', 'Notes': ''},
             '3':{'Name': 'Knutsson', 'Role': 'Pocket', 'Country': 'Sweden', 'Notes': ''},
-            '2':{'Name': 'Zebbosai', 'Role': 'Roamer', 'Country': 'Canada', 'Notes': ''},
+            '2':{'Name': 'Zebbosai', 'Role': 'Roamer', 'Country': 'Sweden', 'Notes': ''},
             '1':{'Name': 'wltrs', 'Role': 'Scout', 'Country': 'Sweden', 'Notes': ''},
             '0':{'Name': 'BeaVerN', 'Role': 'Scout', 'Country': 'Sweden', 'Notes': ''}
     },
