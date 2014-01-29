@@ -60,8 +60,6 @@ $(document).ready(function (){
     var height = window.innerHeight;
     var windowHalfX = window.innerWidth / 2;
     var windowHalfY = window.innerHeight / 2;
-    var postprocessing = { enabled  : true };
-    var hBlur, vBlur;
     var profileTextMesh = {}; //collection of lines of 3d text (excluding player name)
      
 
@@ -290,28 +288,6 @@ $(document).ready(function (){
         renderer.shadowMapEnabled = true;
         renderer.shadowMapSoft = true;
 
-        /*// postprocessing
-
-        var renderModel = new THREE.RenderPass( scene, camera );
-        var effectBloom = new THREE.BloomPass( 1 );
-        var effectCopy = new THREE.ShaderPass( THREE.CopyShader );
-        
-        effectFXAA = new THREE.ShaderPass( THREE.FXAAShader );
-        
-        var width = window.innerWidth || 2;
-        var height = window.innerHeight || 2;
-        
-        effectFXAA.uniforms[ 'resolution' ].value.set( 1 / width, 1 / height );
-        
-        effectCopy.renderToScreen = true;
-        
-        composer = new THREE.EffectComposer( renderer );
-        
-        composer.addPass( renderModel );
-        composer.addPass( effectFXAA );
-        //composer.addPass( effectBloom );
-        composer.addPass( effectCopy );*/
-
         container = document.getElementById( 'ThreeJS' );
         container.appendChild( renderer.domElement );
         
@@ -319,20 +295,10 @@ $(document).ready(function (){
         THREEx.WindowResize(renderer, camera);
         THREEx.FullScreen.bindKey({ charCode : 'm'.charCodeAt(0) });
         
-        // STATS
-        stats = new Stats();
-        stats.domElement.style.position = 'absolute';
-        stats.domElement.style.bottom = '0px';
-        stats.domElement.style.zIndex = 100;
-        //container.appendChild( stats.domElement );
         
         // LIGHTS
         var ambient = new THREE.AmbientLight( 0x202020 );
         scene.add( ambient );
-        
-        light = new THREE.DirectionalLight( 0xffffff, 1.5 );
-        light.position.set( 0, 100, 200 );  
-        //scene.add( light );
     
         spotlight = new THREE.SpotLight(0xffffff, 2.5, 1800, Math.PI, 10);
         spotlight.position.set(60,200,400);
@@ -340,48 +306,8 @@ $(document).ready(function (){
         spotlight.castShadow = true;
         spotlight.shadowMapWidth = 1024;
         spotlight.shadowMapHeight = 1024;
-        //spotlight.shadowCameraVisible = true;
         scene.add(spotlight);
         
-        var pointlight = new THREE.PointLight( 0xffaa00, 1, 500 );
-        pointlight.position.set(-300,200,00);
-        //scene.add( pointlight );
-        var pointlight2 = new THREE.PointLight( 0xffaa00, 1, 500 );
-        pointlight2.position.set(300,200,00);
-        //scene.add( pointlight2 );
-        
-        // FLOOR
-        var floorTexture = new THREE.ImageUtils.loadTexture( 'images/Dirt1.jpg' );
-        floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
-        floorTexture.repeat.set( 10, 10 );
-        var floorMaterial = new THREE.MeshLambertMaterial( { map: floorTexture, side: THREE.DoubleSide } );
-        var floorGeometry = new THREE.CircleGeometry(640, 16);
-        var floor = new THREE.Mesh(floorGeometry, floorMaterial);
-        floor.position.y = 10;
-        floor.rotation.x = Math.PI / 2;
-        floor.receiveShadow = true;
-        //scene.add(floor);
-
-        // FENCE
-        var fenceTexture = new THREE.ImageUtils.loadTexture( 'images/fence1.png' );
-        fenceTexture.wrapT = fenceTexture.wrapS = THREE.RepeatWrapping;
-        fenceTexture.repeat.set(4,1);
-        var fenceMaterial = new THREE.MeshLambertMaterial( { map: fenceTexture, color:0x22222, transparent:true, side:THREE.BackSide});
-        var fenceGeometry = new THREE.CylinderGeometry(600, 600, 300, 16, 16, true);
-        var fenceMesh = new THREE.Mesh(fenceGeometry, fenceMaterial);
-        fenceMesh.position.set(0,1,0);
-        fenceMesh.receiveShadow = true;
-        //scene.add(fenceMesh);
-        
-
-        // SKYBOX
-        skyBoxGeometry = new THREE.SphereGeometry(1600,32,32, 0, Math.PI*2, 0, Math.PI/2)
-        var skyTexture = THREE.ImageUtils.loadTexture( 'images/sky_badlands.jpg' );
-        var skyMaterial = new THREE.MeshBasicMaterial( { map: skyTexture, side: THREE.BackSide } );
-        skyBox = new THREE.Mesh( skyBoxGeometry, skyMaterial );
-        skyBox.scale.y = 0.5;
-        skyBox.position.set(0,-160,0);
-        //scene.add(skyBox);
 
         // BACKGROUND SCENE LOADER
         var snakewaterLastLoader = new THREE.JSONLoader();
@@ -401,14 +327,9 @@ $(document).ready(function (){
     function animate() 
     {
         requestAnimationFrame( animate );
-        render();       
-        update();
+        render();
     }
 
-    function update()
-    {
-        stats.update();
-    }
 
     function render() 
     {
