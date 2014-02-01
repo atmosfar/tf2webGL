@@ -208,7 +208,6 @@ $(document).ready(function (){
         textMesh.name = "Player";
         scene.add(textMesh);
         spotlight.target = textMesh;
-        light.target = textMesh;
         
         // PROFILE TEXT
         var profileInfo = {};
