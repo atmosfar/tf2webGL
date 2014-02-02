@@ -185,10 +185,10 @@ var definedTeams = {
     'players': {
             '5':{'Name': 'ThUn', 'Role': 'Medic', 'Country': 'Germany', 'Notes': ''},
             '4':{'Name': 'kaidus', 'Role': 'Demoman', 'Country': 'England', 'Notes': 'Demoman of Season 16\\ntwitch.tv/kaidus'},
-            '3':{'Name': 'ipz-', 'Role': 'Pocket', 'Country': 'Germany', 'Notes': 'Maincaller'},
+            '3':{'Name': 'ipz-', 'Role': 'Pocket', 'Country': 'Germany', 'Notes': 'Maincaller\\n@IpzTheTwit'},
             '2':{'Name': 'GeaR', 'Role': 'Roamer', 'Country': 'Germany', 'Notes': 'i49 Winner\\nRoamer of Season 16'},
             '1':{'Name': 'basH', 'Role': 'Scout', 'Country': 'Germany', 'Notes': 'i49 Winner'},
-            '0':{'Name': 'smzii', 'Role': 'Scout', 'Country': 'Germany', 'Notes': ''}
+            '0':{'Name': 'smzii', 'Role': 'Scout', 'Country': 'Germany', 'Notes': '@smziii'}
     },
     'tag':{
         'value':'mig*',
@@ -224,7 +224,7 @@ var definedTeams = {
 'Ayo Gurl Sugadaddy Hoody Pussy Creepers' : {
     'players': {
             '5':{'Name': 'kingofsquirrels', 'Role': 'Medic', 'Country': 'England', 'Notes': ''},
-            '4':{'Name': 'Mike', 'Role': 'Demoman', 'Country': 'Wales', 'Notes': 'Player of Season 16\\nPocket of Season 16\\ntwitch.tv/mgemike'},
+            '4':{'Name': 'Mike', 'Role': 'Demoman', 'Country': 'Wales', 'Notes': 'Player of Season 16\\nPocket of Season 16\\ntwitch.tv/mgemike\\n@MikeyAAAA'},
             '3':{'Name': 'Starkie', 'Role': 'Pocket', 'Country': 'England', 'Notes': 'Maincaller\\ntwitch.tv/Stark62'},
             '2':{'Name': 'Sideshow', 'Role': 'Roamer', 'Country': 'England', 'Notes': 'ETF2L Admin'},
             '1':{'Name': 'Hawku', 'Role': 'Scout', 'Country': 'England', 'Notes': ''},
